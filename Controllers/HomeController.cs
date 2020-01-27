@@ -15,7 +15,7 @@ namespace BrubakerMIS4200.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "My MIS 4200 Home Page.";
+            ViewBag.Message = "My MIS 4200 About Page.";
 
             return View();
         }
