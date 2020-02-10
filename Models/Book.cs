@@ -10,7 +10,11 @@ namespace BrubakerMIS4200.Models
     {
         [Key]
         public int BookID { get; set; }
+        [Display(Name = "Book Name")]
         public string bookName { get; set; }
+        [Display(Name = "Book Release Date")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
         public DateTime releaseDate { get; set; }
         public decimal Cost { get; set; }
 
