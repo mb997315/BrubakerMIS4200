@@ -9,6 +9,8 @@ namespace BrubakerMIS4200.Migrations.MISContext
     {
         public Configuration()
         {
+            AutomaticMigrationDataLossAllowed = true;
+            ContextKey = "BrubakerMIS4200.DAL.MIS4200Context";
             AutomaticMigrationsEnabled = true;
             MigrationsDirectory = @"Migrations\MISContext";
         }

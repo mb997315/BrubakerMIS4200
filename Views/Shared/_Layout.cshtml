@@ -19,17 +19,27 @@
                 </button>
                 @Html.ActionLink("MIS 4200", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Book Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>@Html.ActionLink("Authors", "Index", "Authors")</li>
+                    <li>@Html.ActionLink("Books", "Index", "Books")</li>
+                    <li>@Html.ActionLink("Publishers", "Index", "Publishers")</li>
+                </ul>
+            </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home Page", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Authors", "Index", "Authors")</li>
-                    <li>@Html.ActionLink("Books", "Index", "Books")</li>
-                    <li>@Html.ActionLink("Publishers", "Index", "Publishers")</li>
+                    
+
                 </ul>
                 @Html.Partial("_LoginPartial")
-            </div>
+           
         </div>
     </div>
     <div class="container body-content">

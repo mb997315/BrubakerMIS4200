@@ -14,6 +14,8 @@ namespace BrubakerMIS4200.Models
         [Display(Name = "Last Name")]
         public string lastName { get; set; }
         [Display(Name = "Email")]
+        [Required]
+        [EmailAddress(ErrorMessage ="Enter your Email Please")]
         public string email { get; set; }
         public ICollection<Book> Book { get; set; }
     }

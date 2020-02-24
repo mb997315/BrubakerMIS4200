@@ -16,6 +16,9 @@ namespace BrubakerMIS4200.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
         public DateTime releaseDate { get; set; }
+        [Display(Name ="Cost of Book")]
+        [DataType(DataType.Currency)]
+
         public decimal Cost { get; set; }
 
         public int AuthorID { get; set; }
