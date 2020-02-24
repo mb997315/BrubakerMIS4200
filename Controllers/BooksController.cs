@@ -76,7 +76,7 @@ namespace BrubakerMIS4200.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.AuthorID = new SelectList(db.Author, "authorID", "firstName", book.AuthorID);
+            ViewBag.AuthorID = new SelectList(db.Author, "authorID", "fullName", book.AuthorID);
             ViewBag.PublisherID = new SelectList(db.Publisher, "PublisherID", "CompanyName", book.PublisherID);
             return View(book);
         }
@@ -94,7 +94,7 @@ namespace BrubakerMIS4200.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.AuthorID = new SelectList(db.Author, "authorID", "firstName", book.AuthorID);
+            ViewBag.AuthorID = new SelectList(db.Author, "authorID", "fullName");
             ViewBag.PublisherID = new SelectList(db.Publisher, "PublisherID", "CompanyName", book.PublisherID);
             return View(book);
         }

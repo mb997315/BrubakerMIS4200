@@ -14,6 +14,7 @@ namespace BrubakerMIS4200.Models
         [Display(Name = "City")]
         public string City { get; set; }
         [Display(Name = "State")]
+       [StringLength(2, MinimumLength =2, ErrorMessage ="State must be two Charcters")]
         public string State { get; set; }
         [Display(Name = "Address")]
         public string Adress { get; set; }

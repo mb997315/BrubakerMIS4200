@@ -20,10 +20,10 @@ namespace BrubakerMIS4200.Models
         [DataType(DataType.Currency)]
 
         public decimal Cost { get; set; }
-
+        [Display(Name ="Name of Author")]
         public int AuthorID { get; set; }
         public virtual Author Author { get; set; }
-
+        [Display(Name ="Name of Publisher")]
         public int PublisherID { get; set; }
         public virtual Publisher Publisher { get; set; }
 
